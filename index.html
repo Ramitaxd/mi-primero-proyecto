@@ -3,66 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Moderna de Ramiro</title>
+    <title>Ramiro.dev</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-       <nav class="navbar">
-    <div class="logo">Ramiro.dev</div>
 
-    <div class="menu-btn" onclick="toggleMenu()">
-        ☰
-    </div>
+<header>
+    <nav class="navbar">
+        <div class="logo">Ramiro.dev</div>
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        <ul class="nav-links" id="navMenu">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <ul class="nav-links" id="navMenu">
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#sobre-mi">Sobre mí</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-    </ul>
-</nav>
+<section class="hero" id="inicio">
+    <img src="perfil.jpg" class="perfil" alt="Foto de Ramiro">
+    <h1>Hola, soy <span>Ramiro</span></h1>
+    <p>Desarrollador web en formación, creador, emprendedor y apasionado por aprender.</p>
+</section>
 
-    </header>
+<section class="sobre-mi" id="sobre-mi">
+    <h2>Sobre mí</h2>
+    <p>
+        Soy Ramiro, un profesional con experiencia en hotelería, mantenimiento general, cocina
+        y ahora desarrollador web. Me gusta aprender rápido, trabajar en equipo y crear proyectos
+        modernos como este. Este sitio es mi primera página subida con GitHub + Netlify.
+    </p>
+</section>
 
-    <main class="container">
-        <!-- SECCIÓN DE PRESENTACIÓN -->
-        <section class="intro" id="inicio">
-                <img src="perfil.jpg" alt="Foto de Ramiro" class="perfil">
-            <h1>Hola, soy Ramiro</h1>
-            <p>Estoy aprendiendo HTML y CSS, y esta es mi primera página con un diseño moderno.</p>
-        </section>
-
-        <!-- TARJETA MODERNA -->
-        <section class="card" id="sobre-mi">
-            <h2>Mi primera tarjeta moderna</h2>
-            <p>
-                Esta tarjeta la puedo usar para practicar diseño y, más adelante, para mostrar
-                mis proyectos, servicios o incluso información de un minisúper.
-            </p>
-            <button>Mi primer botón</button>
-        </section>
-
-        <!-- SECCIÓN CONTACTO -->
-        <section class="contact" id="contacto">
+<section class="contacto" id="contacto">
     <h2>Contacto</h2>
-    <p>Mis redes sociales y medios de contacto:</p>
-
-    <div class="social-buttons">
-<a href="https://www.instagram.com/rama.ceballoss/" class="btn instagram">Instagram</a>
-        <a href="https://wa.me/3875693154
-" class="btn whatsapp">WhatsApp</a>
-        <a href="https://www.facebook.com/rama.ceballoss/" class="btn facebook">Facebook</a>
+    <div class="contact-buttons">
+        <a href="https://wa.me/5493875693154" target="_blank" class="btn whatsapp">WhatsApp</a>
+        <a href="https://github.com/Ramitaxd" target="_blank" class="btn github">GitHub</a>
+        <a href="mailto:rammamc@gmail.com" class="btn email">Email</a>
     </div>
 </section>
-    </main>
 
-    <!-- SCRIPT PARA EL MENÚ RESPONSIVE -->
-    <script>
-        function toggleMenu() {
-            document.getElementById("navMenu").classList.toggle("active");
-        }
-    </script>
+<footer>
+    <p>© 2025 Ramiro.dev — Todos los derechos reservados.</p>
+</footer>
+
+<script>
+function toggleMenu() {
+    document.getElementById('navMenu').classList.toggle('active');
+}
+</script>
 
 </body>
 </html>
-
